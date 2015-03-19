@@ -21,7 +21,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.data.solr.showcase.config.SearchContext;
-import org.springframework.data.solr.showcase.config.WebContext;
 
 /**
  * @author Christoph Strobl
@@ -29,7 +28,7 @@ import org.springframework.data.solr.showcase.config.WebContext;
 @Configuration
 @ComponentScan
 @EnableAutoConfiguration
-@Import({ WebContext.class, SearchContext.class })
+@Import({ SearchContext.class })
 public class Application {
 
 	public static void main(String[] args) {

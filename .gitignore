@@ -6,5 +6,5 @@ target/
 .sonar4clipse
 *.sonar4clipseExternals
 .idea
-spring-data-solr.iml
+*.iml
 .DS_Store

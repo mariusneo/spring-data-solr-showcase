@@ -17,14 +17,14 @@ In order to run this example a 4+ [Solr Server](http://lucene.apache.org/solr/do
 The application is meant to work with the example data provided by the Solr distribution.
 
 ### Running Solr
+This project considers that Solr 5.0 has been already installed on the system and that the installation
+contains *techproducts* example.
+
 ```emacs
-:solr> cd example
-:example> java -jar start.jar
-:example> cd exampledocs
-:exampledocs> java -jar post.jar *.xml
+:solr> bin/solr -e techproducts
 ```
 
-Access via [localhost:8983/solr/](http://localhost:8983/solr/#/collection1)
+Access via [localhost:8983/solr/](http://localhost:8983/solr/#/techproducts)
 
 ### Running Showcase
 ```emacs
@@ -32,3 +32,9 @@ Access via [localhost:8983/solr/](http://localhost:8983/solr/#/collection1)
 ```
 
 Access via [localhost:8080/search](http://localhost:8080/search)
+
+### Stopping Solr
+
+```emacs
+:solr> bin/solr stop
+```

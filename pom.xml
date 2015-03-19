@@ -13,7 +13,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.0.1.RELEASE</version>
+		<version>1.2.2.RELEASE</version>
 	</parent>
 	
 	<dependencies>
@@ -31,7 +31,7 @@
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-solr</artifactId>
-			<version>${spring-data-solr.verion}</version>
+			<version>1.3.2.RELEASE</version>
 		</dependency>
 		
 		<!-- JSON -->
@@ -49,7 +49,7 @@
 		<dependency>
 		    <groupId>org.apache.tomcat.embed</groupId>
 		    <artifactId>tomcat-embed-jasper</artifactId>
-		    <scope>provided</scope>
+		    <!--<scope>provided</scope>-->
 		</dependency>
 	</dependencies>
 
@@ -57,7 +57,6 @@
 		<start-class>org.springframework.data.solr.showcase.Application</start-class>
 		<java.version>1.7</java.version>
 		
-		<!--  -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<junit.version>4.10</junit.version>
 		<spring-data-solr.verion>1.1.0.RELEASE</spring-data-solr.verion>
